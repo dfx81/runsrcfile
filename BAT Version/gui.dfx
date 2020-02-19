@@ -1,0 +1,23 @@
+
+ +---- Source File Compiler & Executable Program ----------------------------+
+ |                                                                           |
+ |     Created by Danial "dfx" Fitri                                         |
+ |                                                                           |
+ |     -----------------------------------------------------------------     |
+ |                                                                           |
+ |     -c : compile | -s : settings | -l : changelog | -p : path             |
+ |                                                                           |
+ |                                                                           |
+ |     Simply type in the name of the files you wanted to run. All of        |
+ |     the compiling and execution will be done for you in the               |
+ |     background without you having to type anything.                       |
+ |                                                                           |
+ |                                                                           |
+ |     TIP : Typing nothing will run the last typed command.                 |
+ |                                                                           |
+ |           Pressing the arrow keys will scroll through your command        |
+ |           history.                                                        |
+ |                                                                           |
+ |                                                                           |
+ |                                                                           |
+ +---------------------------------------------------------------------------+

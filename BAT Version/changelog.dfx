@@ -1,0 +1,27 @@
+
+ +---- Changelog ------------------------------------------------------------+
+ |                                                                           |
+ |     /* Version 2.0                                                        |
+ |                                                                           |
+ |     -----------------------------------------------------------------     |
+ |                                                                           |
+ |      * It is now possible to run your program without compiling.          |
+ |      *                                                                    |
+ |      * The program also accepts arguments to be passed towards            |
+ |      * the target program.                                                |
+ |      *                                                                    |
+ |      * The program now supports more programming languages.               |
+ |      * (Java, C, C++)                                                     |
+ |      *                                                                    |
+ |      * Some optimizations made to the UI.                                 |
+ |      */                                                                   |
+ |                                                                           |
+ |                                                                           |
+ |                                                                           |
+ |                                                                           |
+ |                                                                           |
+ |                                                                           |
+ |                                                                           |
+ |                                                                           |
+ |                                                                           |
+ +---------------------------------------------------------------------------+

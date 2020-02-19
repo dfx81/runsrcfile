@@ -1,0 +1,56 @@
+; -- Prog.dfx - Demo program for DX-81 --
+; Author: Danial "dfx" Fitri
+
+; DISCLAIMER: THIS IS AN EARLY BUILD OF DX-81. CHANGES MAY
+;             OCCUR IN LATER BUILDS
+
+; -- DOCUMENTATION --
+
+; 1- MEMORY
+; DX-81 uses an 16 byte memory to store its data. However, only
+; 15 bytes can be freely used as the first byte was reserved for
+; program start/end variables.
+
+; 2- REGISTERS
+; DX-81 also came with 4 registers A-D. This registers have the
+; values of 0b00 to 0b11.
+
+; 3- PROGRAM VARIABLES
+; The first byte of the program must state the memory location
+; for the program to start in (using the first 4 bits) and
+; the location the program will terminate (using last 4 bits).
+
+; 4- OPCODES
+; DX-81 understands 4 Opcodes: RDV, LDV, ADD and DSP.
+
+; LDV (0b00): Accepts 1 register and 1 memory location. Simply
+;              load the value from the memory into the register
+; STV (0b01): Accepts 1 register and 1 memory location. Store
+;              the value from the register into the memory
+; ADD (0b10): Accepts 2 registers. Add values from second register
+;              into the first register
+; DSP (0b11): Accepts 1 argument and 1 register. Display
+;              the value from register in bin, hex, dec or char
+
+; 5- DEMO CODE
+; The program below will type out "Hello"
+; (NOTE: Anything after the ';' will be ignored)
+
+  00011001 ; Program start/end (Start: 0x01, End: 0x09)
+  00001010 ; Load value from 0x0B to register A
+  11110000 ; Display value in register A as char
+  00011011 ; Load value from 0x0C to register B
+  11110001 ; Display value in register A as char
+  00101100 ; Load value from 0x0D to register C
+  11110010 ; Display value in register A as char
+  11110010 ; Display value in register A as char
+  00111101 ; Load value from 0x0E to register D
+  11110011 ; Display value in register D as char
+  01001000 ; Memory location 0x0B (contains 0x48)
+  01100101 ; Memory location 0x0C (contains 0x65)
+  01101100 ; Memory location 0x0D (contains 0x6C)
+  01101111 ; Memory location 0x0E (contains 0x6F)
+  00000000 ; Unused
+  00000000 ; Unused
+
+; End of File
